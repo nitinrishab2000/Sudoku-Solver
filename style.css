@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5vh;
+}
+
+input {
+    width: 3vw;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid white;
+    padding: 1vh;
+    font-size: large;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.box {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(9, 1fr);
+    /* border: 2px solid white; */
+    width: 35vw;
+    margin-bottom: 1vh;
+}
+
+#reset {
+    margin-top: 1vh;
+    padding: 10px;
+    cursor: pointer;
+    font-size: large;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1vh;
+    margin-right: 1vw;
+    margin-left: 0.5vw;
+}
+
+#reset:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#solve {
+    margin-top: 1vh;
+    padding: 10px;
+    cursor: pointer;
+    font-size: large;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1vh;
+}
+
+#solve:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: x-large;
+    padding: 2vh;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid white;
+    margin-top: auto;
+}
+
+@media only screen and (min-width: 1300px) {
+    .box {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .box {
+        width: 60vw;
+    }
+}
